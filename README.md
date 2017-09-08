@@ -61,9 +61,7 @@ For loops allow you to to execute code repeatedly. They usually contain 3 parts:
 for( var i=1; i<=10; i++ ){
   console.log(i)
 }
-```
 
-```
 // log 100 - 0 (in tens)
 for( var i=100; i>=0; i-=10 ){
   console.log(i);
@@ -81,6 +79,7 @@ In JS an array is a type of object. It acts like a list to hold information. For
 ```
 // add a value to the end
 fruits.push('orange');
+
 // add a value to the beginning
 fruits.unshift('melon');
 ```
@@ -90,6 +89,7 @@ fruits.unshift('melon');
 ```
 // remove a value to the end
 fruits.pop();
+
 // remove a value to the beginning
 fruits.shift();
 ```
@@ -99,6 +99,7 @@ fruits.shift();
 ```
 // get the first item
 fruits[0];
+
 // get the third item
 fruits[2];
 ```
@@ -110,16 +111,12 @@ fruits[2];
 for( var i=0; i<fruits.length; i++){
   console.log(fruits[i]);
 }
-```
 
-```
 // use forEach
 fruits.forEach(function(fruit) {
     console.log(fruit);
 });
-```
 
-```
 // use for of (ES6)
 for (let fruit of fruits) {
   console.log(fruit);
@@ -143,6 +140,7 @@ var farmAnimals = {
 ```
 // using dot notation
 farmAnimals.donkeys = 1;
+
 // using bracket notation
 farmAnimals['donkeys'] = 1;
 ```
@@ -159,6 +157,7 @@ delete farmAnimals.cows;
 ```
 // using dot notation
 farmAnimals.cows;
+
 // using bracket notation
 farmAnimals['cows'];
 ```
