@@ -23,17 +23,18 @@ JS is weakly typed so you don't need to declare a type when setting variables (e
 
 `let` is block scoped. A variable declared with `let` will only be accessible within the block it is defined in. Unlike `const`, variables declared with `let` can be changed later if needed.
 
-### What do each of these operators do? + - * / % 
+### What do each of these operators do? `+ - * / %` 
 
 Add, Minus, Multiply, Divide and Modulus (the remainder of a division)
 
-### What do each of these operators do? === !== > >= < <=
+### What do each of these operators do? `=== !== > >= < <=`
 
 Strictly equal to, not strictly equal to, greater than, greater than and equal to, less than, less than and equal to.
 
 The `===` and `!==` compare both the value and the type of two things whereas `==` and `!=` just compare the values. So for example:
 
 `1 == '1' // true`
+
 `1 === '1' // false`
 
 ### How do you use the following conditionals?
