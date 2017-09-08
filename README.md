@@ -48,7 +48,7 @@ if( numApples === 0 ){
 // do this
 } else {
 // do this
-}
+}`
 
 ### How do you use a for loop?
 
