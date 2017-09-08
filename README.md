@@ -44,13 +44,25 @@ The `===` and `!==` compare both the value and the type of two things whereas `=
 `var numApples = 5;
 if( numApples === 0 ){
 // do this
-} else if ( numApples < 5) {
+} else if ( numApples < 5){
 // do this
 } else {
 // do this
 }`
 
 ### How do you use a for loop?
+
+For loops contain 3 parts: initialization, condition, final-expression.
+
+`// log 1 - 10
+for( var i=1; i<=10; i++){
+  console.log(i)
+}
+
+// log 100 - 0 (in tens)
+for (var i=100; i>=0; i-=10){
+  console.log(i);
+}`
 
 ### What is an array?
 
