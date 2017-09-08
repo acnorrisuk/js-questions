@@ -9,17 +9,32 @@ String, Number, Null, Undefined, Boolean, (Symbol)
 
 ### How do you declare and assign variables in JS?
 
-`var thing;` to declare.
+`var thing;` to declare a variable.
 
-`var thing = 'my thing';` to assign. 
+`var thing = 'my thing';` to assign a value to a variable. 
 
 JS is weakly typed so you don't need to declare a type when setting variables (e.g. Number).
 
 ### What's the difference between var, const and let?
 
+`var` is function scoped. If you declare a variable using `var` inside a function then it is accessible from anywhere in that function no matter how many sub-blocks it contains.
+
+`const` is block scoped. A variable declared with `const` will only be accessible within the block it is defined in. Variables declared with `const` cannot be assigned a new value once set.
+
+`let` is block scoped. A variable declared with `let` will only be accessible within the block it is defined in. Unlike `const`, variables declared with `let` can be changed later if needed.
+
 ### What do each of these operators do? + - * / % 
 
+Add, Minus, Multiply, Divide and Modulus (the remainder of a division)
+
 ### What do each of these operators do? === !== > >= < <=
+
+Strictly equal to, not strictly equal to, greater than, greater than and equal to, less than, less than and equal to.
+
+The `===` and `!==` compare both the value and the type of two things whereas `==` and `!=` just compare the values. So for example:
+
+`1 == '1' // true`
+`1 === '1' // false`
 
 ### How do you use the following conditionals?
 
