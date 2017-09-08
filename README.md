@@ -37,14 +37,18 @@ The `===` and `!==` compare both the value and the type of two things whereas `=
 
 `1 === '1' // false`
 
-### How do you use the following conditionals?
+### How do you use the following conditionals? `if, if else, else`
 
-#### if
+`if, if else and if` allow you to run a different block of code depending on if a specified condition is true or not. For example:
 
-#### if else
-
-#### else
-
+`var numApples = 5;
+if( numApples === 0 ){
+// do this
+} else if ( numApples < 5) {
+// do this
+} else {
+// do this
+}
 
 ### How do you use a for loop?
 
