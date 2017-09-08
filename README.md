@@ -170,3 +170,13 @@ for( animal in farmAnimals ){
   console.log(animal + ': ' + farmAnimals[animal]);
 }
 ```
+
+### What is a function?
+
+#### How do you define a function?
+
+#### How you do call/invoke/execute a function?
+
+#### How do you pass arguments into a function?
+
+#### What does the return keyword do in a function?
