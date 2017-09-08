@@ -41,7 +41,8 @@ The `===` and `!==` compare both the value and the type of two things whereas `=
 
 `if, if else and if` allow you to run a different block of code depending on if a specified condition is true or not. For example:
 
-```var numApples = 5;
+```
+var numApples = 5;
 if( numApples === 0 ){
 // do this
 } else if ( numApples > 10){
@@ -54,12 +55,14 @@ if( numApples === 0 ){
 
 For loops allow you to to execute code repeatedly. They usually contain 3 parts: initialization, condition, final-expression although one or more can be omitted.
 
-```// log 1 - 10
+```
+// log 1 - 10
 for( var i=1; i<=10; i++ ){
   console.log(i)
 }```
 
-```// log 100 - 0 (in tens)
+```
+// log 100 - 0 (in tens)
 for( var i=100; i>=0; i-=10 ){
   console.log(i);
 }```
@@ -72,38 +75,44 @@ In JS an array is a type of object. It acts like a list to hold information. For
 
 #### How do you put values in an array?
 
-```// add a value to the end
+```
+// add a value to the end
 fruits.push('orange');
 // add a value to the beginning
 fruits.unshift('melon');```
 
 #### How do you remove a value from an array?
 
-```// remove a value to the end
+```
+// remove a value to the end
 fruits.pop();
 // remove a value to the beginning
 fruits.shift();```
 
 #### How do you get values out of an array?
 
-```// get the first item
+```
+// get the first item
 fruits[0];
 // get the third item
 fruits[2];```
 
 #### How do you loop through every value of an array?
 
-```// use a for loop
+```
+// use a for loop
 for( var i=0; i<fruits.length; i++){
   console.log(fruits[i]);
 }```
 
-```// use forEach
+```
+// use forEach
 fruits.forEach(function(fruit) {
     console.log(fruit);
 });```
 
-```// use for of (ES6)
+```
+// use for of (ES6)
 for (let fruit of fruits) {
   console.log(fruit);
 }```
