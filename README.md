@@ -44,11 +44,11 @@ The `===` and `!==` compare both the value and the type of two things whereas `=
 ```
 var numApples = 5;
 if( numApples === 0 ){
-// do this
+  // do this
 } else if ( numApples > 10){
-// do this
+  // do this
 } else {
-// do this
+  // do this
 }
 ```
 
@@ -128,7 +128,46 @@ for (let fruit of fruits) {
 
 ### What is an object?
 
-- How do you put values in an object?
-- How do you get values out of an object?
-- How do you remove a value from an object?
-- How do you loop through every value of an object?
+In JS, an object is a collection of properties set in key/value pairs.
+
+```
+var farmAnimals = {
+  cows: 10,
+  sheep: 5,
+  hens: 20
+}
+```
+
+#### How do you put values in an object?
+
+```
+// using dot notation
+farmAnimals.donkeys = 1;
+// using bracket notation
+farmAnimals['donkeys'] = 1;
+```
+
+#### How do you remove a value from an object?
+
+```
+// remove the cows
+delete farmAnimals.cows;
+```
+
+#### How do you get values out of an object?
+
+```
+// using dot notation
+farmAnimals.cows;
+// using bracket notation
+farmAnimals['cows'];
+```
+
+#### How do you loop through every value of an object?
+
+```
+// get keys and values
+for( animal in farmAnimals ){
+  console.log(animal + ': ' + farmAnimals[animal]);
+}
+```
