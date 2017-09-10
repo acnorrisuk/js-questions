@@ -173,10 +173,51 @@ for( animal in farmAnimals ){
 
 ### What is a function?
 
+A function is a type of procedure or routine that performs a task. Functions allows you to create short blocks of code which you can reuse throughout an application.
+
 #### How do you define a function?
+
+There are several ways to define a function in JS. Most commonly, there are function declarations (which have a name) for example:
+
+```
+function addTwoNumbers(a, b) {
+  return a + b;
+}
+```
+
+Or you can use a function expression (which don't require a name):
+
+```
+var addTwoNumbers = function(a, b) {
+  return a + b;
+}
+```
+
+For one time only functions you can use an IIFE (Immediately Invokable Function Expression)
+
+``` 
+(function() {
+  console.log('This function will run immediately');
+})();
+```
 
 #### How you do call/invoke/execute a function?
 
+```
+myFunction();
+```
+
 #### How do you pass arguments into a function?
 
+```
+myFunction(a, b);
+```
+
 #### What does the return keyword do in a function?
+
+The return keyword stops the function running and returns a value. You can store the returned value in a variable if required:
+
+```
+var sum = addTwoNumbers(1, 5);
+console.log(sum) // 6
+```
